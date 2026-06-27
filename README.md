@@ -2,6 +2,9 @@
 
 A backend REST API service built with **Node.js, Express, SQLite, and JWT** for managing user tickets. It allows users to register, login, create tickets, list their own tickets, and update their statuses according to strict transition rules.
 
+**Live Deployment URL:** [https://ticket-manager-service.onrender.com](https://ticket-manager-service.onrender.com)  
+**Live Health Check:** [https://ticket-manager-service.onrender.com/health](https://ticket-manager-service.onrender.com/health)
+
 ---
 
 ## 📌 Features
