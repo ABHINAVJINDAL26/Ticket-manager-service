@@ -18,6 +18,21 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
+// Welcome / Index Route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: "Welcome to the Ticket System API!",
+    endpoints: {
+      health: "/health",
+      auth: {
+        register: "/auth/register",
+        login: "/auth/login"
+      },
+      tickets: "/tickets"
+    }
+  });
+});
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/tickets', ticketRoutes);
